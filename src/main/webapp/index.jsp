@@ -1353,7 +1353,17 @@ header{
 }
 
 </style>
-</head>
+<style>
+:root{--accent:#6c4cff;--accent2:#ff3d9a;--blue:#00b8ff;--green:#19c37d;--orange:#ff8a00;--yellow:#ffd166;--red:#ff4d6d;}
+body{background:radial-gradient(circle at 10% 10%,rgba(108,76,255,.14),transparent 28%),radial-gradient(circle at 90% 20%,rgba(255,61,154,.12),transparent 26%),#faf9ff}
+.btn,.hero-btn{background:linear-gradient(135deg,var(--accent),var(--accent2),var(--blue));background-size:200% 200%;animation:gradientMove 5s ease infinite}
+@keyframes gradientMove{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+.category-card:nth-child(4n+1){border-top:4px solid #6c4cff}.category-card:nth-child(4n+2){border-top:4px solid #ff3d9a}.category-card:nth-child(4n+3){border-top:4px solid #00b8ff}.category-card:nth-child(4n){border-top:4px solid #19c37d}
+.product-card:nth-child(4n+1) .product-badge{background:#6c4cff}.product-card:nth-child(4n+2) .product-badge{background:#ff3d9a}.product-card:nth-child(4n+3) .product-badge{background:#00a9e8}.product-card:nth-child(4n) .product-badge{background:#19a96f}
+.price{color:#6c4cff!important}.discount,.deal{color:#ff5a00!important}.wishlist-btn.active{color:#ff3d9a!important}
+.newsletter{background:linear-gradient(135deg,#24115c,#6c2bd9 45%,#ff3d9a)!important}
+.announcement{background:linear-gradient(90deg,#6c4cff,#00b8ff,#19c37d,#ff8a00,#ff3d9a);background-size:300% 100%;animation:gradientMove 8s ease infinite}
+</style></head>
 
 <body>
 
