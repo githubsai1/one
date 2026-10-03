@@ -1116,7 +1116,243 @@
                 font-size: 13px;
             }
         }
-    </style>
+    
+/* ===== NEXUSSHOP PREMIUM VISUAL THEME ===== */
+:root{
+  --accent:#7c5cff;
+  --accent2:#5b3fd8;
+  --soft:#f0edff;
+  --dark:#11121a;
+  --bg:#f6f7fb;
+  --line:#e8e8f0;
+  --glow:rgba(124,92,255,.24);
+}
+body{
+  background:
+    radial-gradient(circle at 5% 0%,rgba(124,92,255,.07),transparent 28%),
+    radial-gradient(circle at 95% 15%,rgba(255,108,150,.06),transparent 25%),
+    var(--bg);
+}
+header{
+  background:rgba(255,255,255,.82);
+  box-shadow:0 1px 0 rgba(20,20,40,.04),0 10px 35px rgba(20,20,40,.035);
+}
+.brand{
+  letter-spacing:-.7px;
+}
+.brand i{
+  background:linear-gradient(135deg,#7c5cff,#c05cff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.brand .accent{
+  background:linear-gradient(135deg,#7c5cff,#ff6594);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.search{
+  background:#f4f4f8;
+  box-shadow:inset 0 0 0 1px rgba(20,20,40,.025);
+}
+.search:focus-within{
+  border-color:#b9aaff;
+  box-shadow:0 0 0 4px rgba(124,92,255,.10),0 8px 25px rgba(124,92,255,.08);
+}
+.icon-btn:hover{
+  background:#efedff;
+  color:#6949ed;
+}
+.hero{
+  min-height:540px;
+  border-radius:30px;
+  background:
+    radial-gradient(circle at 80% 20%,rgba(255,112,165,.38),transparent 25%),
+    radial-gradient(circle at 65% 80%,rgba(124,92,255,.45),transparent 35%),
+    linear-gradient(125deg,#10111b 0%,#242044 50%,#351e4c 100%);
+  box-shadow:0 30px 80px rgba(38,24,80,.20);
+}
+.hero::before{
+  opacity:.18;
+  mix-blend-mode:screen;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  width:430px;height:430px;
+  right:6%;top:7%;
+  border-radius:50%;
+  background:linear-gradient(135deg,rgba(124,92,255,.5),rgba(255,96,145,.16));
+  filter:blur(2px);
+  box-shadow:0 0 100px rgba(124,92,255,.24);
+  opacity:.8;
+}
+.hero-copy{
+  position:relative;
+  z-index:2;
+}
+.pill{
+  background:rgba(255,255,255,.09);
+  border-color:rgba(255,255,255,.15);
+  color:#ddd6ff;
+  box-shadow:0 8px 30px rgba(0,0,0,.12);
+}
+.hero h1{
+  max-width:700px;
+  letter-spacing:-1.5px;
+  text-shadow:0 12px 40px rgba(0,0,0,.25);
+}
+.btn-primary{
+  background:linear-gradient(135deg,#7c5cff,#9c5cff);
+  box-shadow:0 10px 28px rgba(124,92,255,.28);
+}
+.btn-primary:hover{
+  background:linear-gradient(135deg,#6848e8,#8d49e5);
+  box-shadow:0 14px 35px rgba(124,92,255,.38);
+}
+.btn-light{
+  background:rgba(255,255,255,.94);
+  box-shadow:0 10px 28px rgba(0,0,0,.12);
+}
+.section-head h2{
+  letter-spacing:-.8px;
+}
+.cat-card{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(124,92,255,.08);
+  box-shadow:0 7px 25px rgba(20,20,40,.035);
+}
+.cat-card::after{
+  content:"";
+  position:absolute;
+  width:70px;height:70px;
+  right:-30px;top:-30px;
+  border-radius:50%;
+  background:rgba(124,92,255,.07);
+}
+.cat-card:hover,.cat-card.selected{
+  border-color:#c9c0ff;
+  box-shadow:0 16px 38px rgba(69,49,150,.12);
+}
+.cat-icon{
+  background:linear-gradient(135deg,#eeeaff,#f9eaff);
+  color:#7050ed;
+  box-shadow:inset 0 0 0 1px rgba(124,92,255,.07);
+}
+.filter-chip.active,.filter-chip:hover{
+  background:linear-gradient(135deg,#171724,#30255c);
+  border-color:#171724;
+  box-shadow:0 7px 20px rgba(20,18,40,.15);
+}
+.product{
+  border:1px solid rgba(124,92,255,.08);
+  box-shadow:0 7px 25px rgba(20,20,40,.04);
+}
+.product:hover{
+  transform:translateY(-7px);
+  box-shadow:0 22px 50px rgba(40,27,90,.13);
+}
+.product-img{
+  background:linear-gradient(145deg,#f4f2ff,#f9f3f8);
+}
+.product-badge{
+  background:linear-gradient(135deg,#7c5cff,#a050ed);
+  box-shadow:0 7px 18px rgba(124,92,255,.22);
+}
+.product-badge.sale{
+  background:linear-gradient(135deg,#ffb648,#ff8067);
+  color:#fff;
+}
+.wish{
+  box-shadow:0 7px 20px rgba(20,20,40,.10);
+}
+.wish.active{
+  color:#ff5f8f;
+}
+.add{
+  background:linear-gradient(135deg,#151621,#29233e);
+}
+.add:hover{
+  background:linear-gradient(135deg,#7c5cff,#9a55e8);
+}
+.deal{
+  border:0;
+  box-shadow:0 22px 65px rgba(30,25,65,.10);
+}
+.deal-copy{
+  background:
+    radial-gradient(circle at 100% 0%,rgba(124,92,255,.12),transparent 35%),
+    #fff;
+}
+.deal-copy .tag{
+  background:#efebff;
+  color:#6547dd;
+}
+.time{
+  background:linear-gradient(135deg,#161622,#33265b);
+  box-shadow:0 8px 20px rgba(25,20,50,.16);
+}
+.review{
+  border:1px solid rgba(124,92,255,.08);
+  box-shadow:0 8px 28px rgba(20,20,40,.045);
+  transition:.2s;
+}
+.review:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 42px rgba(40,27,90,.10);
+}
+.newsletter{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 90% 20%,rgba(255,103,160,.25),transparent 28%),
+    radial-gradient(circle at 70% 100%,rgba(124,92,255,.35),transparent 35%),
+    linear-gradient(135deg,#12131e,#282042);
+  box-shadow:0 24px 60px rgba(29,23,65,.18);
+}
+.newsletter::after{
+  content:"";
+  position:absolute;
+  width:230px;height:230px;
+  right:-90px;bottom:-100px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:50%;
+  box-shadow:0 0 0 35px rgba(255,255,255,.025),0 0 0 70px rgba(255,255,255,.018);
+}
+.newsletter>*{
+  position:relative;z-index:1;
+}
+.newsletter input{
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.10);
+  backdrop-filter:blur(8px);
+}
+.cart-drawer{
+  box-shadow:-25px 0 70px rgba(20,15,50,.18);
+}
+.checkout{
+  background:linear-gradient(135deg,#7c5cff,#9856e9);
+  box-shadow:0 9px 25px rgba(124,92,255,.20);
+}
+.toast{
+  background:linear-gradient(135deg,#171722,#2c2450);
+  box-shadow:0 15px 35px rgba(30,20,65,.25);
+}
+.modal{
+  box-shadow:0 30px 90px rgba(20,15,50,.25);
+}
+@keyframes floatGlow{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
+.hero::after{
+  animation:floatGlow 6s ease-in-out infinite;
+}
+@media(max-width:720px){
+  .hero{box-shadow:0 18px 45px rgba(38,24,80,.18)}
+  .hero::after{width:250px;height:250px;right:-70px;top:10%}
+  .product:hover{transform:translateY(-3px)}
+}
+
+</style>
 </head>
 
 <body>
@@ -1704,5 +1940,84 @@
         console.log('🚀 NexusShop — user‑friendly e‑commerce demo loaded.');
     </script>
 
+
+<style>
+/* ===== NexusShop Easy Store Upgrade ===== */
+:root{--easy-accent:#e06f50;--easy-dark:#171a29;--easy-line:#e7e9ee;--easy-bg:#f7f8fa}
+.cart-drawer{position:fixed;right:0;top:0;height:100%;width:min(430px,100%);background:#fff;z-index:1001;transform:translateX(100%);transition:.28s;display:flex;flex-direction:column;box-shadow:-15px 0 45px rgba(0,0,0,.15)}
+.cart-drawer.open{transform:none}.cart-backdrop{position:fixed;inset:0;background:rgba(10,12,20,.45);z-index:1000;opacity:0;pointer-events:none;transition:.2s}.cart-backdrop.open{opacity:1;pointer-events:auto}
+.cart-head{padding:18px 20px;border-bottom:1px solid var(--easy-line);display:flex;align-items:center;justify-content:space-between}.cart-head h2{font-size:20px}.cart-close{width:38px;height:38px;border-radius:50%;background:#f1f2f5}
+.cart-body{flex:1;overflow:auto;padding:10px 20px}.cart-item2{display:grid;grid-template-columns:65px 1fr auto;gap:12px;padding:13px 0;border-bottom:1px solid var(--easy-line);align-items:center}.cart-item2 img{width:65px;height:65px;object-fit:cover;border-radius:10px;background:#f1f2f4}.cart-item2 h4{font-size:13px}.cart-item2 .mini{font-size:12px;color:#6b7280;margin-top:2px}.qty2{display:flex;align-items:center;gap:7px;margin-top:7px}.qty2 button{width:25px;height:25px;border-radius:7px;background:#f1f2f5}.qty2 span{font-size:12px;font-weight:700;min-width:14px;text-align:center}.remove2{background:none;color:#9aa1ad}.cart-foot{border-top:1px solid var(--easy-line);padding:17px 20px}.cart-total{display:flex;justify-content:space-between;font-weight:800;font-size:18px;margin-bottom:12px}.checkout2{width:100%;padding:13px;border:0;border-radius:11px;background:var(--easy-accent);color:#fff;font-weight:800;cursor:pointer}.checkout2:disabled{opacity:.45;cursor:not-allowed}.cart-empty{text-align:center;color:#6b7280;padding:65px 20px}.cart-empty i{font-size:42px;color:#c5c9d1;margin-bottom:12px}
+.checkout-backdrop{position:fixed;inset:0;background:rgba(10,12,20,.45);z-index:1100;opacity:0;pointer-events:none;transition:.2s}.checkout-backdrop.open{opacity:1;pointer-events:auto}.checkout-modal{position:fixed;z-index:1101;left:50%;top:50%;width:min(520px,calc(100% - 28px));background:#fff;border-radius:18px;box-shadow:0 20px 70px rgba(0,0,0,.2);transform:translate(-50%,-45%);opacity:0;pointer-events:none;transition:.25s}.checkout-modal.open{opacity:1;pointer-events:auto;transform:translate(-50%,-50%)}.checkout-head{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid var(--easy-line)}.checkout-body{padding:20px}.checkout-body label{display:block;font-size:12px;font-weight:700;margin-bottom:12px}.checkout-body input,.checkout-body select{width:100%;margin-top:5px;padding:11px 12px;border:1px solid var(--easy-line);border-radius:10px;outline:none}.order-box{background:#f7f8fa;border-radius:10px;padding:12px;margin-bottom:15px;font-size:13px}.success-box2{text-align:center;padding:25px}.success-box2 i{font-size:48px;color:#239b82;margin-bottom:10px}
+.easy-toast{position:fixed;right:20px;bottom:20px;z-index:1200;background:#171a29;color:#fff;padding:12px 16px;border-radius:12px;opacity:0;transform:translateY(8px);pointer-events:none;transition:.2s;font-size:13px}.easy-toast.show{opacity:1;transform:none}
+@media(max-width:600px){.cart-drawer{width:100%}.checkout-modal{max-height:90vh;overflow:auto}}
+</style>
+
+<div class="cart-backdrop" id="easyCartBackdrop"></div>
+<aside class="cart-drawer" id="easyCartDrawer" aria-label="Shopping cart">
+  <div class="cart-head"><h2>Your Cart</h2><button class="cart-close" id="easyCartClose" aria-label="Close cart"><i class="fas fa-times"></i></button></div>
+  <div class="cart-body" id="easyCartBody"></div>
+  <div class="cart-foot"><div class="cart-total"><span>Total</span><span id="easyCartTotal">$0</span></div><button class="checkout2" id="easyCheckout" disabled>Continue to Checkout</button></div>
+</aside>
+<div class="checkout-backdrop" id="easyCheckoutBackdrop"></div>
+<div class="checkout-modal" id="easyCheckoutModal">
+  <div class="checkout-head"><h2>Checkout</h2><button class="cart-close" id="easyCheckoutClose"><i class="fas fa-times"></i></button></div>
+  <div class="checkout-body" id="easyCheckoutBody">
+    <div class="order-box" id="easyOrderBox"></div>
+    <form id="easyCheckoutForm">
+      <label>Full name<input id="easyName" required placeholder="Your name"></label>
+      <label>Email<input id="easyEmail" type="email" required placeholder="you@example.com"></label>
+      <label>Delivery address<input id="easyAddress" required placeholder="Street, city, PIN"></label>
+      <label>Payment method<select id="easyPayment"><option>Cash on delivery</option><option>Card / UPI</option></select></label>
+      <button class="checkout2" type="submit">Place Demo Order</button>
+    </form>
+  </div>
+</div>
+<div class="easy-toast" id="easyToast"></div>
+
+<script>
+/* ===== Easy shopping layer: real cart, wishlist and checkout ===== */
+(function(){
+  let easyCart=JSON.parse(localStorage.getItem('nexus_easy_cart')||'{}');
+  let easyWish=JSON.parse(localStorage.getItem('nexus_easy_wish')||'[]');
+  const money=n=>'$'+Number(n).toLocaleString();
+  const save=()=>{localStorage.setItem('nexus_easy_cart',JSON.stringify(easyCart));localStorage.setItem('nexus_easy_wish',JSON.stringify(easyWish));};
+  const qty=()=>Object.values(easyCart).reduce((a,b)=>a+b,0);
+  const total=()=>Object.entries(easyCart).reduce((sum,[id,q])=>{const p=PRODUCTS.find(x=>x.id===Number(id));return sum+(p?p.price*q:0)},0);
+  const toast=msg=>{const t=document.getElementById('easyToast');t.textContent=msg;t.classList.add('show');clearTimeout(window.easyToastTimer);window.easyToastTimer=setTimeout(()=>t.classList.remove('show'),1700)};
+  const cartBtn=document.getElementById('cartBtn');
+  const cartCount=document.getElementById('cartCount');
+  const wishBtn=document.querySelector('.header-actions .icon-btn[title="Wishlist"]');
+  if(!cartBtn)return;
+  const cleanCart=cartBtn.cloneNode(true);cartBtn.replaceWith(cleanCart);
+  function badges(){cartCount.textContent=qty();if(wishBtn)wishBtn.dataset.wishlist=easyWish.length;}
+  function add(id){easyCart[id]=(easyCart[id]||0)+1;save();badges();renderCart();toast('Added to cart ✓');}
+  function change(id,d){easyCart[id]=(easyCart[id]||0)+d;if(easyCart[id]<=0)delete easyCart[id];save();badges();renderCart();}
+  function renderCart(){
+    const body=document.getElementById('easyCartBody'), entries=Object.entries(easyCart);
+    body.innerHTML=entries.length?entries.map(([id,q])=>{const p=PRODUCTS.find(x=>x.id===Number(id));return `<div class="cart-item2"><img src="${p.img}" alt="${escapeHtml(p.title)}"><div><h4>${escapeHtml(p.title)}</h4><div class="mini">${money(p.price)} each</div><div class="qty2"><button data-minus="${p.id}">−</button><span>${q}</span><button data-plus="${p.id}">+</button></div></div><button class="remove2" data-remove="${p.id}"><i class="fas fa-trash"></i></button></div>`}).join(''):'<div class="cart-empty"><i class="fas fa-shopping-bag"></i><p>Your cart is empty.</p><small>Add a product and it will appear here.</small></div>';
+    document.getElementById('easyCartTotal').textContent=money(total());document.getElementById('easyCheckout').disabled=!entries.length;
+    body.querySelectorAll('[data-minus]').forEach(b=>b.onclick=()=>change(Number(b.dataset.minus),-1));body.querySelectorAll('[data-plus]').forEach(b=>b.onclick=()=>change(Number(b.dataset.plus),1));body.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{delete easyCart[b.dataset.remove];save();badges();renderCart();});
+  }
+  function openCart(){document.getElementById('easyCartDrawer').classList.add('open');document.getElementById('easyCartBackdrop').classList.add('open');document.body.classList.add('no-scroll');renderCart();}
+  function closeCart(){document.getElementById('easyCartDrawer').classList.remove('open');document.getElementById('easyCartBackdrop').classList.remove('open');document.body.classList.remove('no-scroll');}
+  cleanCart.addEventListener('click',openCart);document.getElementById('easyCartClose').onclick=closeCart;document.getElementById('easyCartBackdrop').onclick=closeCart;
+  document.getElementById('easyCheckout').onclick=()=>{document.getElementById('easyOrderBox').innerHTML=`<strong>${qty()} item${qty()===1?'':'s'}</strong> in your order<br><b>Total: ${money(total())}</b>`;document.getElementById('easyCheckoutModal').classList.add('open');document.getElementById('easyCheckoutBackdrop').classList.add('open');closeCart();};
+  function closeCheckout(){document.getElementById('easyCheckoutModal').classList.remove('open');document.getElementById('easyCheckoutBackdrop').classList.remove('open');}
+  document.getElementById('easyCheckoutClose').onclick=closeCheckout;document.getElementById('easyCheckoutBackdrop').onclick=closeCheckout;
+  document.getElementById('easyCheckoutForm').onsubmit=e=>{e.preventDefault();document.getElementById('easyCheckoutBody').innerHTML='<div class="success-box2"><i class="fas fa-circle-check"></i><h3>Order placed!</h3><p style="color:#687080">Demo checkout completed. No real payment was processed.</p><br><button class="btn btn-primary" id="easyDone">Done</button></div>';easyCart={};save();badges();renderCart();document.getElementById('easyDone').onclick=closeCheckout;};
+  /* Replace the original add-to-cart implementation and re-render product cards. */
+  window.addToCart=function(productId,btnEl){add(productId);if(btnEl){const old=btnEl.innerHTML;btnEl.innerHTML='<i class="fas fa-check"></i> Added';btnEl.classList.add('added');setTimeout(()=>{btnEl.innerHTML=old;btnEl.classList.remove('added')},900)}};
+  /* Make wishlist buttons persistent and interactive. */
+  const oldRenderProducts=window.renderProducts;
+  window.renderProducts=function(list){oldRenderProducts(list);document.querySelectorAll('.wish-btn').forEach((b,i)=>{const card=b.closest('.product-card');const title=card.querySelector('h5').textContent;const p=PRODUCTS.find(x=>x.title===title);if(!p)return;b.style.color=easyWish.includes(p.id)?'var(--accent)':'';b.innerHTML=easyWish.includes(p.id)?'<i class="fas fa-heart"></i>':'<i class="far fa-heart"></i>';b.onclick=e=>{e.stopPropagation();easyWish=easyWish.includes(p.id)?easyWish.filter(x=>x!==p.id):[...easyWish,p.id];save();renderProducts(visibleProductsForEasy||PRODUCTS);toast(easyWish.includes(p.id)?'Added to wishlist ♥':'Removed from wishlist');}});};
+  let visibleProductsForEasy=null;
+  /* Preserve original search/category filtering while making wishlist state work. */
+  const originalFilter=window.filterProducts;
+  window.filterProducts=function(q){visibleProductsForEasy=PRODUCTS.filter(p=>p.title.toLowerCase().includes(String(q||'').toLowerCase())||p.category.toLowerCase().includes(String(q||'').toLowerCase()));originalFilter(q);};
+  cleanCart.addEventListener('click',()=>renderCart());badges();renderCart();
+  if(wishBtn){wishBtn.addEventListener('click',()=>{toast(easyWish.length?`${easyWish.length} item${easyWish.length===1?'':'s'} in wishlist`:'Wishlist is empty');});}
+})();
+</script>
 </body>
 </html>
